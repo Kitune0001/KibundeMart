@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0B9EDC2B63C1DC00DC0627 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0B9EDB2B63C1DC00DC0627 /* ShowViewController.swift */; };
 		0E96F6FB2B2C5C4D00811220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96F6FA2B2C5C4D00811220 /* AppDelegate.swift */; };
 		0E96F6FD2B2C5C4D00811220 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96F6FC2B2C5C4D00811220 /* SceneDelegate.swift */; };
 		0E96F6FF2B2C5C4D00811220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96F6FE2B2C5C4D00811220 /* ViewController.swift */; };
 		0E96F7022B2C5C4D00811220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E96F7002B2C5C4D00811220 /* Main.storyboard */; };
 		0E96F7042B2C5C5100811220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E96F7032B2C5C5100811220 /* Assets.xcassets */; };
 		0E96F7072B2C5C5100811220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E96F7052B2C5C5100811220 /* LaunchScreen.storyboard */; };
+		0E96F70F2B2C5E7300811220 /* ロゴ.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E96F70E2B2C5E7300811220 /* ロゴ.png */; };
+		0E98416D2B6CEF7B009567EA /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98416C2B6CEF7B009567EA /* PlusViewController.swift */; };
+		0E9B32EE2B5834D9006748FC /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B32ED2B5834D9006748FC /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E0B9EDB2B63C1DC00DC0627 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		0E96F6F72B2C5C4D00811220 /* KibundeMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KibundeMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E96F6FA2B2C5C4D00811220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E96F6FC2B2C5C4D00811220 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		0E96F7032B2C5C5100811220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E96F7062B2C5C5100811220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E96F7082B2C5C5100811220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E96F70E2B2C5E7300811220 /* ロゴ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴ.png"; sourceTree = "<group>"; };
+		0E98416C2B6CEF7B009567EA /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
+		0E9B32ED2B5834D9006748FC /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +67,12 @@
 				0E96F6FA2B2C5C4D00811220 /* AppDelegate.swift */,
 				0E96F6FC2B2C5C4D00811220 /* SceneDelegate.swift */,
 				0E96F6FE2B2C5C4D00811220 /* ViewController.swift */,
+				0E9B32ED2B5834D9006748FC /* CollectionView.swift */,
+				0E0B9EDB2B63C1DC00DC0627 /* ShowViewController.swift */,
+				0E98416C2B6CEF7B009567EA /* PlusViewController.swift */,
 				0E96F7002B2C5C4D00811220 /* Main.storyboard */,
 				0E96F7032B2C5C5100811220 /* Assets.xcassets */,
+				0E96F70E2B2C5E7300811220 /* ロゴ.png */,
 				0E96F7052B2C5C5100811220 /* LaunchScreen.storyboard */,
 				0E96F7082B2C5C5100811220 /* Info.plist */,
 			);
@@ -128,6 +140,7 @@
 				0E96F7072B2C5C5100811220 /* LaunchScreen.storyboard in Resources */,
 				0E96F7042B2C5C5100811220 /* Assets.xcassets in Resources */,
 				0E96F7022B2C5C4D00811220 /* Main.storyboard in Resources */,
+				0E96F70F2B2C5E7300811220 /* ロゴ.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0B9EDC2B63C1DC00DC0627 /* ShowViewController.swift in Sources */,
 				0E96F6FF2B2C5C4D00811220 /* ViewController.swift in Sources */,
+				0E98416D2B6CEF7B009567EA /* PlusViewController.swift in Sources */,
 				0E96F6FB2B2C5C4D00811220 /* AppDelegate.swift in Sources */,
+				0E9B32EE2B5834D9006748FC /* CollectionView.swift in Sources */,
 				0E96F6FD2B2C5C4D00811220 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +310,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KibundeMart/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +339,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KibundeMart/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
