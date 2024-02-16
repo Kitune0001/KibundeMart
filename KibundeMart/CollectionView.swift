@@ -19,8 +19,6 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
     
     @IBOutlet var collectionView: UICollectionView!
     
-    
-    
     let spacer: CGFloat = 16
     
     override func viewDidLoad() {
@@ -30,10 +28,8 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
         collectionView.dataSource = self
         
         array = []
-
-    
-        saveData.set(array, forKey: "array_data")
         
+        saveData.set(array, forKey: "item_data")
         
         let layout = UICollectionViewFlowLayout()
         // 縦スクロールに設定
@@ -49,13 +45,12 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
         // レイアウトをcollectionViewに適応させる
 
         collectionView.collectionViewLayout = layout
-        
-        
-        // Do any additional setup after loading the view.
     }
-    
-    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        itemList = saveData.object(forKey: "item_data") as! [[String : Any]]
+        collectionView.reloadData()
+    }
     //コレクションビューで配列の分セルを表示する！
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        return itemList.count
@@ -63,25 +58,16 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
     //コレクションビューのセルの中に何を表示するか！
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        
-        
-        
         let cell: UICollectionViewCell =
         collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
         let imageView = cell.contentView.viewWithTag(1) as! UIImageView
         imageView.image = UIImage(data: itemList[indexPath.row]["itemImage"] as! Data)
 
-  
         let titleLabel = cell.contentView.viewWithTag(2) as! UILabel
         titleLabel.text = itemList[indexPath.row]["itemName"] as? String
         
-      
-
         return cell
-        
-        
-        
     }
     //セルをタップした際に何をするか！
     func collectionView(_ collectionView: UICollectionView,
