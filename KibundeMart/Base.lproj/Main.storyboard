@@ -153,7 +153,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="JKz-mF-gbg">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="skh-OO-orE">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="skh-OO-orE">
                             <connections>
                                 <action selector="addTask" destination="GUG-6d-p1Z" id="7Sw-1O-OZA"/>
                             </connections>

@@ -33,20 +33,7 @@ class PlusViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         super.viewDidLoad()
     }
     
-    @IBAction func addItem() {
-        var itemName = itemTextfild.text
-        var itemImage = itemImageView.image
-        // 今のarrayにtextFieldの値を追加する
-        array.append(itemTextfild.text!)
-        
-        // 新しい値の入ったarrayをUserDefaultsに上書きする
-        // 保存するためのkeyが同じなので上書きされる!
-        saveData.set(array, forKey: "animals_data")
-        
-        // 画面を1つ前に戻す
-        dismiss(animated: true, completion: nil)
-    }
-    
+   
     @IBAction func tapHappy(){
         //押されたら一時的に変数に値を格納する！
         feeling = "Happy"
@@ -117,7 +104,15 @@ class PlusViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         print(itemList)
         // 最新のtaskListに更新する
         saveData.set(itemList, forKey: "item_data")
-    }
+        //保存した！アラートをだす！
+        let alert = UIAlertController(title: "保存", message: "保存できたよ！", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            // OKボタン押下時に実行した処理
+            self.navigationController?.popViewController(animated: true)
+        })
+                alert.addAction(ok)
+                self.present(alert, animated: true, completion: nil)
+       }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info:
         [UIImagePickerController.InfoKey : Any]) {

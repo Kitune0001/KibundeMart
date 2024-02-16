@@ -14,14 +14,12 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
     
     var array = [String]()
     
-    
+    var itemList = [[String: Any]]()
     
     
     @IBOutlet var collectionView: UICollectionView!
     
-    let imageArray = ["img","img","img",",img,",",img,","img"]
     
-    let titleArray = ["title1","title1","title1","title1","title1","title1"]
     
     let spacer: CGFloat = 16
     
@@ -60,7 +58,7 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
     
     //コレクションビューで配列の分セルを表示する！
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return imageArray.count
+       return itemList.count
     }
     //コレクションビューのセルの中に何を表示するか！
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -72,11 +70,11 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
         collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
         let imageView = cell.contentView.viewWithTag(1) as! UIImageView
-        imageView.image = UIImage(named: imageArray[indexPath.row])
+        imageView.image = UIImage(data: itemList[indexPath.row]["itemImage"] as! Data)
 
   
         let titleLabel = cell.contentView.viewWithTag(2) as! UILabel
-        titleLabel.text = titleArray[indexPath.row]
+        titleLabel.text = itemList[indexPath.row]["itemName"] as? String
         
       
 
