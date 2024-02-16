@@ -27,10 +27,6 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        array = []
-        
-        saveData.set(array, forKey: "item_data")
-        
         let layout = UICollectionViewFlowLayout()
         // 縦スクロールに設定
 
