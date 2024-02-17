@@ -35,7 +35,7 @@ class SelectViewController: UIViewController {
                 //  遷移先のViewControllerを取得
                 let next = segue.destination as? CollectionView
                 // 用意した遷移先の変数に値を渡す
-                next?.outputValue = self.inputField.text
+                next?.outputValue = feeling
             }
         }
 
@@ -45,40 +45,29 @@ class SelectViewController: UIViewController {
         }
 
     @IBAction func tapCreative(){
-           //押されたら一時的に変数に値を格納する！
+        //押されたら一時的に変数に値を格納する！
            feeling = "Creative"
-           creativeButton.layer.borderWidth = 2.0
-           creativeButton.layer.borderColor = UIColor.black.cgColor
-           happyButton.layer.borderWidth = 0.0
-           relaxButton.layer.borderWidth = 0.0
-           harryButton.layer.borderWidth = 0.0
-       }
+        // 画面遷移実行
+            performSegue(withIdentifier: "toBViewController", sender: nil)
+    }
+
     @IBAction func tapHappy(){
            //押されたら一時的に変数に値を格納する！
            feeling = "Happy"
-           creativeButton.layer.borderWidth = 2.0
-           creativeButton.layer.borderColor = UIColor.black.cgColor
-           happyButton.layer.borderWidth = 0.0
-           relaxButton.layer.borderWidth = 0.0
-           harryButton.layer.borderWidth = 0.0
+        // 画面遷移実行
+            performSegue(withIdentifier: "toBViewController", sender: nil)
        }
     @IBAction func tapRelax(){
         //押されたら一時的に変数に値を格納する！
         feeling = "Relax"
-        relaxButton.layer.borderWidth = 2.0
-        relaxButton.layer.borderColor = UIColor.black.cgColor
-        happyButton.layer.borderWidth = 0.0
-        harryButton.layer.borderWidth = 0.0
-        creativeButton.layer.borderWidth = 0.0
+        // 画面遷移実行
+            performSegue(withIdentifier: "toBViewController", sender: nil)
     }
     @IBAction func tapHarry(){
         //押されたら一時的に変数に値を格納する！
         feeling = "Harry"
-        harryButton.layer.borderWidth = 2.0
-        harryButton.layer.borderColor = UIColor.black.cgColor
-        happyButton.layer.borderWidth = 0.0
-        relaxButton.layer.borderWidth = 0.0
-        creativeButton.layer.borderWidth = 0.0
+        // 画面遷移実行
+            performSegue(withIdentifier: "toBViewController", sender: nil)
     }
 
 }

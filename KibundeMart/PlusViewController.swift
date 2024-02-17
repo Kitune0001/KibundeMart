@@ -33,7 +33,12 @@ class PlusViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         super.viewDidLoad()
     }
     
-   
+    // 画面が表示されるとき
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            // データベースから最近のデータを取得して、itemListに格納する
+            itemList = saveData.object(forKey: "item_data") as! [[String : Any]]
+        }
     @IBAction func tapHappy(){
         //押されたら一時的に変数に値を格納する！
         feeling = "Happy"
