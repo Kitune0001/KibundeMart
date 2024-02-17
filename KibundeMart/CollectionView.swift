@@ -16,6 +16,7 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
     
     var itemList = [[String: Any]]()
     
+    var outputValue : String?
     
     @IBOutlet var collectionView: UICollectionView!
     

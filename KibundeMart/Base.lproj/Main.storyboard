@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="1744.8" y="-555.47226386806597"/>
         </scene>
-        <!--View Controller-->
+        <!--Select View Controller-->
         <scene sceneID="enb-wB-udh">
             <objects>
-                <viewController id="zy0-7f-n8p" sceneMemberID="viewController">
+                <viewController id="zy0-7f-n8p" customClass="SelectViewController" customModule="KibundeMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGY-fc-f0Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0044A02B7F92050099F172 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00449F2B7F92050099F172 /* SelectViewController.swift */; };
 		0E0B9EDC2B63C1DC00DC0627 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0B9EDB2B63C1DC00DC0627 /* ShowViewController.swift */; };
 		0E96F6FB2B2C5C4D00811220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96F6FA2B2C5C4D00811220 /* AppDelegate.swift */; };
 		0E96F6FD2B2C5C4D00811220 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96F6FC2B2C5C4D00811220 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E00449F2B7F92050099F172 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		0E0B9EDB2B63C1DC00DC0627 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		0E96F6F72B2C5C4D00811220 /* KibundeMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KibundeMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E96F6FA2B2C5C4D00811220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				0E96F6FC2B2C5C4D00811220 /* SceneDelegate.swift */,
 				0E96F6FE2B2C5C4D00811220 /* ViewController.swift */,
 				0E9B32ED2B5834D9006748FC /* CollectionView.swift */,
+				0E00449F2B7F92050099F172 /* SelectViewController.swift */,
 				0E0B9EDB2B63C1DC00DC0627 /* ShowViewController.swift */,
 				0E98416C2B6CEF7B009567EA /* PlusViewController.swift */,
 				0E96F7002B2C5C4D00811220 /* Main.storyboard */,
@@ -154,6 +157,7 @@
 				0E0B9EDC2B63C1DC00DC0627 /* ShowViewController.swift in Sources */,
 				0E96F6FF2B2C5C4D00811220 /* ViewController.swift in Sources */,
 				0E98416D2B6CEF7B009567EA /* PlusViewController.swift in Sources */,
+				0E0044A02B7F92050099F172 /* SelectViewController.swift in Sources */,
 				0E96F6FB2B2C5C4D00811220 /* AppDelegate.swift in Sources */,
 				0E9B32EE2B5834D9006748FC /* CollectionView.swift in Sources */,
 				0E96F6FD2B2C5C4D00811220 /* SceneDelegate.swift in Sources */,
