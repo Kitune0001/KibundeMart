@@ -8,12 +8,21 @@
 import UIKit
 
 class ShowViewController: UIViewController {
-
+    
+    @IBOutlet var imageView: UIImageView!
+        var selectedImg: UIImage!
+     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageView.image = selectedImg
+                // 画像のアスペクト比を維持しUIImageViewサイズに収まるように表示
+                imageView.contentMode = UIView.ContentMode.scaleAspectFit
+         
+    }
 
         // Do any additional setup after loading the view.
-    }
+}
     
   
 
@@ -27,4 +36,4 @@ class ShowViewController: UIViewController {
     }
     */
 
-}
+
