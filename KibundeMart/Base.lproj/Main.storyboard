@@ -292,7 +292,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="EId-vb-fSE" kind="show" id="Vbk-tq-r9g"/>
+                                    <segue destination="EId-vb-fSE" kind="show" identifier="toBViewController" id="Vbk-tq-r9g"/>
                                 </connections>
                             </button>
                         </subviews>
