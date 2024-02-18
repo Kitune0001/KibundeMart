@@ -379,7 +379,7 @@
                     <navigationItem key="navigationItem" id="rpW-3G-SqM"/>
                     <connections>
                         <outlet property="collectionView" destination="z8X-I9-bbb" id="ATn-km-Ekd"/>
-                        <segue destination="Fcq-Qw-GeQ" kind="modal" id="Jlv-QD-ceW"/>
+                        <segue destination="Fcq-Qw-GeQ" kind="modal" identifier="toShouViewController" id="Jlv-QD-ceW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLX-E0-Aif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

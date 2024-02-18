@@ -45,8 +45,15 @@ class CollectionView: UIViewController,UICollectionViewDelegate,
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        itemList = saveData.object(forKey: "item_data") as! [[String : Any]]
-        collectionView.reloadData()
+                itemList = saveData.object(forKey: "item_data") as! [[String : Any]]
+                let filteredItems = itemList.filter { item in
+                    guard let feeling = item["feeling"] as? String else { return false }
+                    return feeling == outputValue!
+                }
+                
+                itemList = filteredItems
+                collectionView.reloadData()
+            
     }
     //コレクションビューで配列の分セルを表示する！
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
