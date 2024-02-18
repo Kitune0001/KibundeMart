@@ -106,7 +106,7 @@ class PlusViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         let item: [String: Any] = [
                     "itemName": itemTextfild.text as Any,
                     "itemImage": itemImageView.image?.pngData() as NSData? as Any,
-                    "felling": feeling as Any
+                    "feeling": feeling as Any
         ]
          
            // タスクリストに保存するタスクデータを追加する
